@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ClassConcept1 {
+
+	public static void main(String[] args) {
+		fun Obj = new fun();
+		Obj.add();
+
+	}
+	static class fun
+	{
+		private int a,b;
+		public void add()
+		{
+			Scanner in = new Scanner(System.in);
+			System.out.print("\n Enter the value of A and B");
+			a = in.nextInt();
+			b = in.nextInt();
+			System.out.print("\n Sum:"+ (a+b));
+		}
+	}
+
+}

@@ -1,0 +1,52 @@
+
+public class School {
+	public static void main(String[] args) {
+		
+	      Student StudOne = new Student("John");
+	      Student StudTwo = new Student("Mervin");
+
+	     
+	      StudOne.studAge(15);
+	      StudOne.studplace("Nagercoil");
+	      StudOne.studFees(40000);
+	      StudOne.printStudent();
+
+	      StudTwo.studAge(21);
+	      StudTwo.studplace("Nagercoil");
+	      StudTwo.studFees(50000);
+	      StudTwo.printStudent();
+
+	}
+	static class Student {
+
+		   String name;
+		   int age;
+		   String place;
+		   double fees;
+
+		   public Student(String name) {
+		      this.name = name;
+		   }
+
+		   public void studAge(int studAge) {
+		      age = studAge;
+		   }
+
+		   public void studplace(String studplace) {
+			   place = studplace;
+		   }
+
+		   public void studFees(double studFees) {
+			   fees = studFees;
+		   }
+
+		   public void printStudent() {
+		      System.out.println("Name:"+ name );
+		      System.out.println("Age:" + age );
+		      System.out.println("Place:" + place );
+		      System.out.println("Fees:" + fees);
+		      System.out.println("\t");
+		   }
+		}
+
+}

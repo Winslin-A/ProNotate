@@ -1,0 +1,52 @@
+
+public class School {
+	public static void main(String[] args) {
+		
+	      Employee empOne = new Employee("John");
+	      Employee empTwo = new Employee("Mervin");
+
+	     
+	      empOne.empAge(26);
+	      empOne.empDesignation("Manager");
+	      empOne.empSalary(50000);
+	      empOne.printEmployee();
+
+	      empTwo.empAge(21);
+	      empTwo.empDesignation("Programmer");
+	      empTwo.empSalary(28000);
+	      empTwo.printEmployee();
+
+	}
+	static class Employee {
+
+		   String name;
+		   int age;
+		   String designation;
+		   double salary;
+
+		   public Employee(String name) {
+		      this.name = name;
+		   }
+
+		   public void empAge(int empAge) {
+		      age = empAge;
+		   }
+
+		   public void empDesignation(String empDesig) {
+		      designation = empDesig;
+		   }
+
+		   public void empSalary(double empSalary) {
+		      salary = empSalary;
+		   }
+
+		   public void printEmployee() {
+		      System.out.println("Name:"+ name );
+		      System.out.println("Age:" + age );
+		      System.out.println("Designation:" + designation );
+		      System.out.println("Salary:" + salary);
+		      System.out.println("\t");
+		   }
+		}
+
+}

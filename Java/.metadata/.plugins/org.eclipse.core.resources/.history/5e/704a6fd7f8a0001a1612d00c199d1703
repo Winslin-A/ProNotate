@@ -1,0 +1,10 @@
+import java.util.HashMap;
+public class Hmapsample1 {
+
+	public static void main(String[] args) {
+		HashMap<Integer,String> Obj1 = new HashMap<Integer,String> ();
+		
+
+	}
+
+}
